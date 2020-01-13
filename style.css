@@ -521,7 +521,7 @@ xclip
 }
 
 .section.lb {
-    background-color: #f2f3f5;
+    background-color: #e3e4e6;
 }
 
 .section.db {
@@ -696,7 +696,7 @@ xclip
 	border-radius: 50px 50px 0px 50px;
 	position: relative;
     transition: all 0.3s ease-in-out 0s;
-    height:auto;
+    height:372px;
     
 }
 .products-inner-box{
