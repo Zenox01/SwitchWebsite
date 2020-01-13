@@ -696,7 +696,7 @@ xclip
 	border-radius: 50px 50px 0px 50px;
 	position: relative;
     transition: all 0.3s ease-in-out 0s;
-    height:550px;
+    height:auto;
     
 }
 .products-inner-box{
@@ -711,6 +711,20 @@ xclip
     margin-top:20px;
     color: #000;
     height:450px;
+    
+}
+.vas-inner-box{
+	padding: 15px;
+    /* background: #b3afac; */
+    background: #ffffff;
+	margin-bottom: 30px;
+	border-radius: 50px 50px 0px 50px;
+	position: relative;
+    transition: all 0.3s ease-in-out 0s;
+    margin-left:10px;
+    margin-top:20px;
+    color: #000;
+    height:275px;
     
 }
 .ser-icon{
