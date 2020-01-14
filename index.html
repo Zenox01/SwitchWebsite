@@ -34,7 +34,7 @@
     <![endif]-->
 
 </head>
-<body id="page-top" class="politics_version">
+<body onload="Filter()" id="page-top" class="politics_version">
 
     <!-- LOADER -->
     <div id="preloader">
@@ -188,9 +188,9 @@ Wireless Network and Statefull Firewall Solution.
 				<div class="col-md-6">
                     <div class="services-inner-box">
 						<div class="ser-icon">
-							<i class="flaticon-idea"></i>
+							<i class="fa fa-gamepad icon-size"></i>
 						</div>
-						<a class="js-scroll-trigger" href="#Products"><h2 onclick="GamFunc()" > 
+						<a class="js-scroll-trigger" href="#Products"><h2 onclick="GameFunc()" > 
 							Gaming</h2> </a>
 						<p>Switch specially designs, develops and resales games to
 						cater to the gaming community, we not only create games that create competition between oponents but make these games entertaining as well.Working with cutting edge technology, our games have appealing visuals, comprehensive storylines
@@ -218,7 +218,7 @@ Wireless Network and Statefull Firewall Solution.
 			<div class="gallery-menu row">
 				<div class="col-md-12">
 					<div class="button-group filter-button-group text-center">
-						 <button class="active" data-filter="*">All</button>
+						 <!-- <button class="active" data-filter="*">All</button> -->
 						<button id="VAS" data-filter=".gal_a">VAS</button>
 						<button id="Int" data-filter=".gal_b">Integrated Services</buttonid="VAS">
 						<button id="Digi" data-filter=".gal_c">Digital</button>
@@ -259,13 +259,10 @@ Wireless Network and Statefull Firewall Solution.
 							
 						</div>
 						<a href="https://jazz.com.pk/prepaid/jazz-drive" target="_blank">
-						Jazz Drive-Personal cloud storage services</a>
+						Jazz Drive</a>
 						</h2>
-<p>Switch's vision is to enable rapid delivery of compelling
-	operator digital life cloud services to consumers & businesses
-	Designed to make sharing of your files and memories, a simpler,
-	and safer experience with our free online cloud storage. Save it all
-	in one place, but enjoy access from anywhere in the world.
+<p>Jazz Drive is a personal cloud storage to address the increasing storage need of Digital Consumers. It helps users to back-up their users’ photos, videos, music and documents. It provides an easy to store, access & share experience. It has an amazing feature 
+	of auto backing-up user’s data on WIFI. It is available on Android, iOS, Website, Windows & MacOS.
 							</p>					</div>
 						
 				</div>
@@ -339,7 +336,29 @@ Wireless Network and Statefull Firewall Solution.
 							
 						</div>
 					 <a> 
-						Switch Play
+						Game Land
+					</a>
+				</h2>
+<p>Switch specially designs, develops and resales games to
+	entertain the audience and create competition between
+	opponents. Our objective is to deliver seamless, unlimited and
+	exciting games on our platform.We aim to evolve your online
+	gaming expereince.
+							</p>					</div>
+						
+				</div>
+				<div class="col-md-4 col-sm-6 gallery-grid gal_d ">
+					<div class="products-inner-box">
+						<h2>
+						<div class="ser-icon">
+							<a>
+							<img src="uploads/play.png" class="img-fluid" alt="Image">
+							</a>
+						
+							
+						</div>
+					 <a> 
+						Game store
 					</a>
 				</h2>
 <p>Switch specially designs, develops and resales games to
@@ -1195,7 +1214,7 @@ Wireless Network and Statefull Firewall Solution.
                 <div class="col-md-12">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <form action="https://formspree.io/team@switchsolutions.com.pk" method="POST" id="contactForm" name="sentMessage" novalidate="novalidate">
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
@@ -1231,22 +1250,23 @@ Wireless Network and Statefull Firewall Solution.
     </div><!-- end section -->
 
     <div class="copyrights">
+		
         <div class="container">
+			
             <div class="footer-distributed">
 				<a href="#"><img class="img-fluid" src="images/logo.png" alt="" /></a>
                 <div class="footer-center">
                     <p class="footer-links">
                         <a href="#home">Home</a>
                         <!-- <a href="#">Blog</a> -->
-                        <!-- <a href="#">Pricing</a> -->
+                       <a href="#Products">Products</a>
                         <a href="#about">About</a>
                         <!-- <a href="#">Faq</a> -->
                         <a href="#contact">Contact</a>
                     </p>
 					<p class="footer-company-name"> &copy; All Rights Reserved. 2020 
 						<br></p>
-						 <!-- Design By : 
-					<a href="">SenTek Labs</a></p> -->
+
                 </div>
             </div>
         </div><!-- end container -->
@@ -1262,8 +1282,8 @@ Wireless Network and Statefull Firewall Solution.
 	<script src="js/parallaxie.js"></script>
 	<script src="js/headline.js"></script>
 	<!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script> -->
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
 	<script src="js/jquery.vide.js"></script>
@@ -1272,13 +1292,16 @@ Wireless Network and Statefull Firewall Solution.
 			document.getElementById("VAS").click();
 		}
 		function GameFunc() {
-			document.getElementById("Game").click();
+			document.getElementById("Gam").click();
 		}
 		function IntFunc() {
 			document.getElementById("Int").click();
 		}
 		function DigiFunc() {
 			document.getElementById("Digi").click();
+		}
+		function Filter() {
+			document.getElementById("Int").click();
 		}
 		</script>
 
