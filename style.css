@@ -175,7 +175,12 @@ ul, li, ol{
 	list-style: none;
 	padding: 0px;
 }
-
+.ser-icon .img-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 15px;
+}
 
 /*------------------------------------------------------------------
     WP CORE
@@ -692,7 +697,12 @@ xclip
     
     width: 550px;
 }
-
+.ser-icon .product-icon{
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 15px;
+}
 .services-inner-box{
 	padding: 15px;
 	background: #ffffff;
@@ -711,25 +721,30 @@ xclip
 	border-radius: 50px 50px 0px 50px;
 	position: relative;
     transition: all 0.3s ease-in-out 0s;
-    margin-left:10px;
-    margin-top:20px;
+    margin-left:40px;
+    margin-top:40px;
     color: #000;
     height:450px;
-    
+       text-align: center;
+}
+.products-inner-box h2{
+    padding-top: 50px;
+}
+.vas-inner-box h2{
+    padding-top: 50px;
 }
 .vas-inner-box{
-	padding: 15px;
-    /* background: #b3afac; */
+	padding: 25px;
     background: #ffffff;
 	margin-bottom: 30px;
 	border-radius: 50px 50px 0px 50px;
 	position: relative;
     transition: all 0.3s ease-in-out 0s;
-    margin-left:10px;
+    margin-left:40px;
     margin-top:20px;
     color: #000;
     height:275px;
-    
+    text-align: center;
 }
 .ser-icon{
 	width: 90px;
@@ -738,6 +753,29 @@ xclip
 	line-height: 90px;
 	position: relative;
 	z-index: 1;
+}
+.prod-icon{
+    
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        line-height: 90px;
+        position: absolute;
+        z-index: 1;
+        top: -45px;
+        left: 50%;
+        margin-left: -45px;
+        background: #fff;
+        border-radius: 100%;
+        padding: 0px;
+    
+   
+}
+.prod-icon .img-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 15px;
 }
 .ser-icon i{
 	font-size: 50px;
@@ -1615,7 +1653,8 @@ hr.invis1 {
 
 .filter-button-group{
 	border-radius: 0px;
-	margin: 10px 0px;
+    margin: 10px;
+    margin-bottom: 30px; 
 	display: block;
 	border-radius: 100px 100px 0px 100px;
 }
@@ -1638,7 +1677,8 @@ hr.invis1 {
 	padding: 12px 40px;
 	border: none;
 	border-radius: 0px;
-	border-radius: 100px 100px 0px 100px;
+    border-radius: 100px 100px 0px 100px;
+    margin-left: 20px;
 }
 
 
