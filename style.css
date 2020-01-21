@@ -721,8 +721,9 @@ xclip
 	border-radius: 50px 50px 0px 50px;
 	position: relative;
     transition: all 0.3s ease-in-out 0s;
-    margin-left:40px;
+    margin-left:20px;
     margin-top:40px;
+    margin-right: 20px;
     margin-bottom: 40px;
     color: #000;
     height:480px;
