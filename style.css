@@ -710,7 +710,7 @@ xclip
 	border-radius: 50px 50px 0px 50px;
 	position: relative;
     transition: all 0.3s ease-in-out 0s;
-    height:372px;
+    height:auto;
     
 }
 .products-inner-box{
@@ -723,8 +723,9 @@ xclip
     transition: all 0.3s ease-in-out 0s;
     margin-left:40px;
     margin-top:40px;
+    margin-bottom: 40px;
     color: #000;
-    height:450px;
+    height:480px;
        text-align: center;
 }
 .products-inner-box h2{
@@ -741,9 +742,10 @@ xclip
 	position: relative;
     transition: all 0.3s ease-in-out 0s;
     margin-left:40px;
-    margin-top:20px;
+    margin-top:30px;
+    margin-bottom: 30px;
     color: #000;
-    height:275px;
+    height:300px;
     text-align: center;
 }
 .ser-icon{
@@ -1655,7 +1657,8 @@ hr.invis1 {
 	border-radius: 0px;
     margin: 10px;
     margin-bottom: 30px; 
-	display: block;
+    display: block;
+    margin-top: -20px;
 	border-radius: 100px 100px 0px 100px;
 }
 
@@ -1678,7 +1681,9 @@ hr.invis1 {
 	border: none;
 	border-radius: 0px;
     border-radius: 100px 100px 0px 100px;
-    margin-left: 20px;
+     margin-left: 20px; 
+     margin-top: 20px;
+    display: inline;
 }
 
 
