@@ -2478,7 +2478,7 @@ select.mobile-device {
 .footer-distributed .footer-company-name {
     font-weight: 300;
     margin: 0 10px;
-    color: #666;
+    color: rgb(197, 197, 197);
     padding: 0;
 }
 
