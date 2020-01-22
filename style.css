@@ -724,13 +724,84 @@ xclip
     margin-left:20px;
     margin-top:40px;
     margin-right: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #000;
-    height:580px;
-    text-align: center;
+    height:590px;
+    text-align: justify;
     
 }
 .products-inner-box h2{
+    padding-top: 50px;
+}
+
+.digital-inner-box{
+	padding: 15px;
+    /* background: #b3afac; */
+    background: #ffffff;
+	margin-bottom: 30px;
+	border-radius: 50px 50px 0px 50px;
+	position: relative;
+    transition: all 0.3s ease-in-out 0s;
+    margin-left:20px;
+    margin-top:40px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #000;
+    height:auto;
+    text-align: justify;
+    
+
+  
+        
+    
+}
+.digital-inner-box h2{
+    padding-top: 50px;
+}
+.digital2-inner-box{
+	padding: 15px;
+    /* background: #b3afac; */
+    background: #ffffff;
+	margin-bottom: 30px;
+	border-radius: 50px 50px 0px 50px;
+	position: relative;
+    transition: all 0.3s ease-in-out 0s;
+    margin-left:20px;
+    margin-top:40px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #000;
+    height:auto;
+    text-align: justify;
+   
+
+  
+        
+    
+}
+.digital2-inner-box h2{
+    padding-top: 50px;
+}
+
+
+.gaming-inner-box{
+	padding: 15px;
+    /* background: #b3afac; */
+    background: #ffffff;
+	margin-bottom: 30px;
+	border-radius: 50px 50px 0px 50px;
+	position: relative;
+    transition: all 0.3s ease-in-out 0s;
+    margin-left:20px;
+    margin-top:40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    color: #000;
+    height:auto;
+    text-align: justify;
+    
+}
+.gaming-inner-box h2{
     padding-top: 50px;
 }
 .vas-inner-box h2{
@@ -2639,7 +2710,8 @@ select.mobile-device {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #333333;
+    /* background: #333333; */
+    background: #28a9e2;
     z-index: 11000;
     position: fixed;
     display: block
@@ -2653,6 +2725,7 @@ select.mobile-device {
   position: absolute;
   top: calc(50% - 17px);
   left: calc(50% - 35px);
+ 
 }
 #loader {
   width: 70px;
@@ -2665,7 +2738,9 @@ select.mobile-device {
   border-radius: 50%;
   box-sizing: border-box;
   animation: rotate 3s ease-in-out infinite;
-  transform: rotate(-200deg)
+  transform: rotate(-200deg);
+
+  
 }
 @keyframes rotate {
   0% { border-width: 10px; }
