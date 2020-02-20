@@ -22,6 +22,27 @@
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
+.link-hover{
+    color:white
+}
+.link-hover:hover{
+    color:#28a9e2;
+  
+}
+.Contact-links{
+    margin-left: 22px; 
+    color:black;
+}
+.contact-list{
+    color:black; 
+    font-size: 18px;
+    margin-top: -25px;
+    padding-left: 25px;
+    
+}
+.contact-list li{
+padding-bottom: 15px;
+}
 
 body {
     color: #999999;
@@ -403,9 +424,9 @@ a img.aligncenter {
 }
 .heading h1{
 	color: #ffffff;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 62px;
-	text-transform: capitalize;
+	text-transform: uppercase;
 }
 .heading p{
 	font-size: 18px;
@@ -502,7 +523,7 @@ xclip
     display: block;
     position: relative;
     overflow: hidden;
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .noover {
@@ -620,8 +641,34 @@ xclip
 	margin-left: auto;
 	margin-top: 0px;
 	cursor: pointer;
+	float: right;
+	 background: #28a9e2;
+	color: #ffffff;
+	padding: 14px 20px;
+	border-radius: 100px;
+	overflow: hidden;
+	border: none;
 }
-
+.sim-btn:hover{
+	color: #ffffff;
+}
+.sim-btn2{	
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	cursor: pointer;
+	float: left;
+	 background: #28a9e2;
+	color: #ffffff;
+	padding: 14px 20px;
+	border-radius: 100px;
+	overflow: hidden;
+	border: none;
+}
+.sim-btn2:hover{
+	color: #ffffff;
+}
 .btn-hover-new::after {
     content: attr(data-text);
     position: absolute;
@@ -685,8 +732,8 @@ xclip
 }
 
 .img-fluid {
-    max-width: 300px;
-    height: 84px;
+    max-width: 35%
+
 }
 .img2-fluid {
     max-width: 300px;
@@ -705,12 +752,13 @@ xclip
 }
 .services-inner-box{
 	padding: 15px;
-	background: #ffffff;
+	background: #effaff;
 	margin-bottom: 30px;
-	border-radius: 50px 50px 0px 50px;
+	/* border-radius: 50px 50px 0px 50px; */
 	position: relative;
     transition: all 0.3s ease-in-out 0s;
     height:auto;
+    color:black;
     
 }
 .products-inner-box{
@@ -726,7 +774,7 @@ xclip
     margin-right: 20px;
     margin-bottom: 20px;
     color: #000;
-    height:590px;
+    height:auto;
     text-align: justify;
     
 }
@@ -745,44 +793,16 @@ xclip
     margin-left:20px;
     margin-top:40px;
     margin-right: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #000;
     height:auto;
     text-align: justify;
-    
-
-  
-        
+   
     
 }
 .digital-inner-box h2{
     padding-top: 50px;
 }
-.digital2-inner-box{
-	padding: 15px;
-    /* background: #b3afac; */
-    background: #ffffff;
-	margin-bottom: 30px;
-	border-radius: 50px 50px 0px 50px;
-	position: relative;
-    transition: all 0.3s ease-in-out 0s;
-    margin-left:20px;
-    margin-top:40px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    color: #000;
-    height:auto;
-    text-align: justify;
-   
-
-  
-        
-    
-}
-.digital2-inner-box h2{
-    padding-top: 50px;
-}
-
 
 .gaming-inner-box{
 	padding: 15px;
@@ -842,7 +862,7 @@ xclip
         top: -45px;
         left: 50%;
         margin-left: -45px;
-        background: #fff;
+        /* background: #fff; */
         border-radius: 100%;
         padding: 0px;
     
@@ -852,7 +872,7 @@ xclip
     max-width: 100%;
     margin: 0 auto;
     display: block;
-    padding: 15px;
+    /* padding: 15px; */
 }
 .ser-icon i{
 	font-size: 50px;
@@ -881,7 +901,7 @@ xclip
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
-	border-radius: 50px 50px 0px 50px;
+	/* border-radius: 50px 50px 0px 50px; */
 	transition: all 0.3s ease-in-out 0s;
 	z-index: 0;
 }
@@ -920,7 +940,7 @@ xclip
 }
 
 .learn_btn{
-	background: #333333;
+	 background: #28a9e2;
 	color: #ffffff;
 	padding: 14px 20px;
 	border-radius: 100px;
@@ -930,18 +950,9 @@ xclip
 	color: #ffffff;
 }
 
-.sim-btn{
-	background: #333333;
-	color: #ffffff;
-	padding: 14px 20px;
-	border-radius: 100px;
-	overflow: hidden;
-	border: none;
-}
 
-.sim-btn:hover{
-	color: #ffffff;
-}
+
+
 
 .hvr-bounce-to-top{
 	display: inline-block;
@@ -1736,7 +1747,9 @@ hr.invis1 {
     margin-top: -20px;
 	border-radius: 100px 100px 0px 100px;
 }
-
+.filter-button-group button:focus{
+outline: 0;
+}
 .filter-button-group button.active{
 	background: #28a9e2;
 	color: #fff;
@@ -2353,14 +2366,11 @@ select.mobile-device {
 }
 
 .contact_form {
-    border: 1px solid #ededed;
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
-    background-color: #f2f3f5;
-    padding: 40px 30px;
+   background: #e3e4e6;
 }
 
 .contact_form .form-control {
-    background-color: #333333;
+    background-color: #ffffff;
     margin-bottom: 30px;
     border: 1px solid #ebebeb;
     box-sizing: border-box;
@@ -2395,7 +2405,8 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/1.jpg) no-repeat center center #ffffff;
+   background: #e3e4e6;
+   width: 100%;
 }
 
 .contact_form textarea.form-control{

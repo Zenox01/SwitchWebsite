@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+
 <html lang="en">
-<head onload="Filter()">
+
     <!-- Basic -->
-    <meta charset="utf-8">
+<head onload="Filter()" ><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
    
     <!-- Mobile Metas -->
@@ -15,36 +16,42 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+    <link rel="icon" href="images/favicon.ico" />
+    
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ 
     <!-- Site CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-	
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
-<body  id="page-top" class="politics_version">
+<body id="page-top" class="politics_version">
 
-	<!-- LOADER -->
-
-     <div id="preloader">
+    <!-- LOADER -->
+    <div id="preloader">
         <div id="main-ld">
 			<div id="loader"></div>  
 		</div>
-    </div>
+    </div><!-- end loader -->
     <!-- END LOADER -->
 	
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<img class="img-fluid" src="images/switch-solutions-logo-white.png" alt="" />
+			<img class="img-fluid" src="images/switch-white.png" alt="" />
 			<!-- <img class="img-fluid logo-sticky" src="images/switch-solutions-logo-white.png" alt="" /> -->
 		</a> 
 
@@ -54,9 +61,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
             </li>
@@ -83,7 +88,7 @@
       </div>
     </nav>
 	
-	<section id="home" class="main-banner parallaxie" style="background: url('images/test.jpg')">
+	<section id="home" class="main-banner parallaxie" style="background: url('images/theme/banner-01.jpg')">
 		<div class="heading">
 			<h1>Switch Solutions</h1>			
 			<h3 class="cd-headline clip is-full-width">
@@ -94,6 +99,7 @@
 					<b>Integrated Solutions</b>
 					<b>Surveillance Systems</b>
 					<b>Digital Platforms</b>
+					<b>Agriculture Solutions</b>
 				</span>
 				<div class="btn-ber">
 					<a class="learn_btn hvr-bounce-to-top js-scroll-trigger" href="#about">Learn More</a>
@@ -102,108 +108,167 @@
 		</div>
 	</section>
 
-    <div id="about" class="section wb">
+    <div id="about" >
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
-                        <h2>We are Switch</h2>
-                        <p> Switch Solutions Pvt. Ltd. has emerged as
-							Pakistan’s leading Value-Added-Services &
-							Solutions Provider with a vision to providing
-							quality services to mobile operators and
-							consumers across the globe and to
-							revolutionize mobile communication into an
-							experience, which consumers have never
-							experienced before. </p>
-						
+      <img style="display:block; max-height: 60%; max-width: 100%; " src="./images/about-04.jpg">
+			<p style="color:black;  font-size: 18px; text-align:center; padding-top: 5%; padding-bottom: 5%; ">
+				Switch Solutions Pvt. Ltd. has emerged as Pakistan’s leading Value-Added Services & Solutions Provider
+				with a vision to provide quality services to mobile operators and consumers across the globe and revolutionize
+				mobile communication into an experience, which consumers have never experienced before.
+				</p>
 
-                        <a href="#contact" class="sim-btn hvr-bounce-to-top nav-link js-scroll-trigger"><span>Contact Us</span></a>
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
+		</div><!-- end container -->
+		
+	</div><!-- end section -->
+	<section id="services">
+	<div style=" height: fit-content; width: 100%; background-image:url('./images/Layer 1.png'); background-repeat:no-repeat;">
+		<div class="container">
+				<div class="row" style="padding-top: 180px;">
+					<div class="col-md-4 section-title text-center">
+						<h3 style="color: white; text-align: justify;">Services</h3>
+						<p style="color: white; text-align: justify;">
+							Our company offers a wide range of services to our individual and business clients, 
+							working with industry specialists, we provide our clients personalized quality service.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<div class="services-inner-box">
+							<div class="ser-icon">
+								
+								<img src="images/icons/vas.png">
+							
+								<!-- <i class="flaticon-seo"></i> -->
+							</div>
+							<a class="js-scroll-trigger" href="#Products"><h2 onclick="VASFunc()" > 
+								VAS Solutions</h2> </a>
+							<p>Offereing a wide range of product lines seamlessly integrated with existing 
+								infrasstructures of telecom operators and developed with customer satisfaction and basic need in mind.
+							
+								
+								</p>
+												</div>
+					</div><!-- end col -->
+					<div class="col-md-4">
+						<div class="services-inner-box">
+							<div class="ser-icon">
+								<img src="images/icons/IS.png">
+								<!-- <i class="flaticon-development"></i> -->
+							</div>
+							<a class="js-scroll-trigger" href="#Products"><h2 onclick="IntFunc()" > 
+								Integrated Services</h2> </a>
+							<p>
+								Offereing a wide range of product lines seamlessly integrated with existing 
+								infrasstructures of telecom operators and developed with customer satisfaction and basic need in mind.
+	</p>
+							
+						</div>
+					</div><!-- end col -->
+					<div class="col-md-4" style="height: fit-content;">
+						<div style="height:20px">
+						</div>
+						</div>
+				<div class="col-md-4" style="height: fit-content;">
+					<div class="services-inner-box">
+						<div class="ser-icon">
+							<img src="images/icons/DP.png">
+							<!-- <i class="flaticon-process"></i> -->
+						</div>
+						<a class="js-scroll-trigger" href="#Products"><h2 onclick="DigiFunc()" > 
+							Digital Platforms</h2> </a>
+						<p>Offereing a wide range of product lines seamlessly integrated with existing 
+							infrasstructures of telecom operators and developed with customer satisfaction and basic need in mind. </p>
+					</div>
+				</div><!-- end col -->
+			<!-- end col -->
+				<div class="col-md-4" style="height: fit-content; ">
+					<div class="services-inner-box">
+						<div class="ser-icon">
+							<!-- <i class="fa fa-gamepad icon-size"></i> -->
+							<img src="images/icons/gaming.png">
+						</div>
+						<a class="js-scroll-trigger" href="#Products"><h2 onclick="GameFunc()" > 
+							Gaming</h2> </a>
+						<p>
+							Offereing a wide range of product lines seamlessly integrated with existing 
+											infrasstructures of telecom operators and developed with customer satisfaction and basic need in mind. 
+								</p>
+					</div>
+				</div>
+				
+				</div><!-- end row -->
+			</div>
+	</div>
 
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img class="img-fluid-about img-rounded" src="images/about.jpg" alt="" >
-                    </div><!-- end media -->
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
+		
+
+	</section>
+		
+		
+				
 	
-    <div id="services" class="section lb">
+    <!-- OLD SERVICES SECTION
+		<div id="services" class="section lb">
         <div class="container">
-            <div class="section-title text-center">
-                <h3>Services</h3>
-            </div>
-
-            <div class="row">
+			<div class="section-title text-center">
+				<h3>Services</h3>
+			</div>
+		
+			<div class="row">
 				<div class="col-md-6">
-                    <div class="services-inner-box">
+					<div class="services-inner-box">
 						<div class="ser-icon">
 							<i class="flaticon-seo"></i>
 						</div>
 						<a class="js-scroll-trigger" href="#Products"><h2 onclick="VASFunc()" > 
 							VAS Solutions</h2> </a>
-						<p>Switch Solutions specializes in developing digital platforms across various verticals and channels. Ranging from Agriculture, Tourism, Utilities & Tools etc., our teams develop intelligent solutions with the right mix of conventional and digital technologies. We not only develop Android, iOS and Web based platforms, but also specialize in transforming conventional VAS services into Digital services.
-							 We have expertise in Call center, SMS, IVR, Video and Audio content development etc.
+						<p>Switch Solutions Pvt. Ltd., offers a wide range of product lines, which is seamlessly integrated with existing infrastructures of telecom operators and is developed with customer satisfaction and basic need in mind. We offer VAS solutions that can allow clients to maximize the potential of engaging customers over the mobile channel. Offering VAS services that are based on multiple platforms.  
 							
 							</p>
 											</div>
-                </div><!-- end col -->
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+				</div>
+				<div class="col-md-6">
+					<div class="services-inner-box">
 						<div class="ser-icon">
 							<i class="flaticon-development"></i>
 						</div>
 						<a class="js-scroll-trigger" href="#Products"><h2 onclick="IntFunc()" > 
 							Integrated Services</h2> </a>
 						<p>
-							Network infrastructure solution provided by Switch Solutions
-ensures market leader product and offer services to all sized
-organizations. Thus providing clients improved communications
-and insight resulting in significant operational cost saving.
-						Our integrated infrastructure solutions cover the full extent of
-enterprise network convergence, including Network Device Integration, Routing and Switching, Structured Voice and Data Cabling,
-Wireless Network and Statefull Firewall Solution.
-</p>
+							Switch Solutions Pvt. Ltd., offers a wide range of product lines, which is seamlessly integrated with existing infrastructures of telecom operators and is developed with customer satisfaction and basic need in mind. We offer VAS solutions that can allow clients to maximize the potential of engaging customers over the mobile channel. Offering VAS services that are based on multiple platforms.
+		</p>
 						
 					</div>
-                </div><!-- end col -->
+				</div>
 				<div class="col-md-6">
-                    <div class="services-inner-box">
+					<div class="services-inner-box">
 						<div class="ser-icon">
 							<i class="flaticon-process"></i>
 						</div>
 						<a class="js-scroll-trigger" href="#Products"><h2 onclick="DigiFunc()" > 
 							Digital Platforms</h2> </a>
-						<p>Switch Solutions specializes in developing digital platforms across various verticals and channels. Ranging from Agriculture, Tourism, Utilities & Tools etc., our teams develop intelligent solutions with the right mix of conventional and digital technologies. We not only develop Android, iOS and Web based platforms, but also specialize in transforming conventional VAS services into Digital services. 
-							We have expertise in Call center, SMS, IVR, Video and Audio content development etc</p>
+						<p>Switch Solutions specializes in developing digital platforms across various verticals and channels. Ranging from agriculture, tourism, utilities & tools etc., our teams develop intelligent solutions with the right mix of conventional and digital technologies. We not only develop Android, iOS and Web-based platforms but also specialize in transforming conventional VAS services into digital services. We have expertise in call center, SMS, IVR, video and audio content development.  </p>
 					</div>
-                </div><!-- end col -->
-		<!-- end col -->
+				</div>
+		
 				<div class="col-md-6">
-                    <div class="services-inner-box">
+					<div class="services-inner-box">
 						<div class="ser-icon">
 							<i class="fa fa-gamepad icon-size"></i>
 						</div>
 						<a class="js-scroll-trigger" href="#Products"><h2 onclick="GameFunc()" > 
 							Gaming</h2> </a>
-						<p>Switch specially designs, develops and resales games to
-						cater to the gaming community, we not only create games that create competition between oponents but make these games entertaining as well.Working with cutting edge technology, our games have appealing visuals, comprehensive storylines
-							and highly involving gameplay. </p>
-							<p>Our objective is to deliver seamless, unlimited and
-								exciting games on our platform.We aim to evolve your online
-								gaming expereince.
+						<p>Switch specially designs, develops and resales games to cater to the gaming community, we not only create games that create competition between opponents but make these games entertaining as well. Working with cutting edge technology, our games have appealing visuals, comprehensive storylines and highly involving gameplay. Our objective is to deliver seamless, unlimited and exciting games on our platform. We aim to evolve your online gaming experience. 
 								</p>
 					</div>
-                </div><!-- end col -->
+				</div>
 			
-			</div><!-- end row -->
+			</div>
+			
+			
 		
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
+			</div>
+        </div>
+    </div> -->
 	
 	<div id="Products" class="section lb">
 		<div class="container">
@@ -232,17 +297,13 @@ Wireless Network and Statefull Firewall Solution.
 							</a>
 							
 						</div>
-						<a href="https://www.bakhabarkissan.com/" target="_blank">
-						Bakhabar Kisaan <br/>
-						Bridging the Farming community
+				<a href="https://www.bakhabarkissan.com/" target="_blank">
+						Bakhabar Kisaan-
+						<h3>Bridging the Farming community</h3>
 						</a>
 				
 				</h2>
-<p>Bakhabar Kisaan is meant to improve the productivity and efficiency of Pakistani farmers.
-	Bakhabar Kisaan which means 'Informed Farmer' brings together more than 3.5 Million farmers. Being the 
-	digital hub for Agriculture it cuts through the
-	 Agri-Value Chain starting from Planning to sowing to Harvesting to Selling the produce.
-	 
+<p>Our primary objective is to improve farmer's yield, productivity, efficiency and improvement both quality and quantity-wise and decrease cost by guiding them via conventional and digital channels, supported by modern technologies. Bakhabar Kisaan which means 'Informed Farmer' brings together more than 3.8 million farmers.
 							</p>					</div>
 						
                 </div>
@@ -259,9 +320,7 @@ Wireless Network and Statefull Firewall Solution.
 						<a href="https://jazz.com.pk/prepaid/jazz-drive" target="_blank">
 						Jazz Drive</a>
 						</h2>
-<p>Jazz Drive is a personal cloud storage to address the growing storage needs of the modern-day Digital Consumer. It helps users to back-up their photos, videos, music and documents with extreme efficiency. 
-	It provides an easy to store, access & share experience with an easy to use interface. It has an amazing feature 
-	of auto backing-up user’s data on WIFI. It is available on Android, iOS, Website, Windows & MacOS.
+<p>Jazz Drive is a personal cloud storage to address the growing storage needs of the modern-day digital consumer. It helps users to back-up their photos, videos, music and documents with extreme efficiency. It provides an easy to store, access & share experience with an easy to use interface. It has an amazing feature of auto backing-up user’s data on WIFI. It is available on Android, iOS, Website, Windows & MacOS. 
 							</p>					</div>
 						
 				</div>
@@ -279,14 +338,10 @@ Wireless Network and Statefull Firewall Solution.
 						Farm to Home
 					</a>
 				</h2>
-<p>
-	Farm to home aims to reduce the gap in the Agri value chain by connecting farmers and end consumers, making sure that farmers get a fair price and our customers, top quality produce. 
- From sourcing to purchasing, packaging and delivery we do everything in-house.
-We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you can come visit us and handpick fruits and vegetables.
-</p>					</div>
+<p>Farm to home aims to reduce the gap in the Agri value chain by connecting farmers and end consumers, making sure that farmers get a fair price and our customers, top quality produce. From sourcing to purchasing, packaging and delivery we do everything in-house. We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you can come to visit us and handpick fruits and vegetables. 
+							</p>					</div>
 						
 				</div>
-				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_c">
 					<div class="digital-inner-box">
 						<h2>
@@ -300,8 +355,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<a href="https://www.linkedin.com/company/reap-agro-pvt-ltd/" target="_blank">
 						Reap Agro
 					</a></h2>
-<p>An innovative company to bring farmers and buyers under one roof and serve them as they might be dealing themselves.
-	purpose of page is to get HR with the help of this site and promote this company so that people and companies know about us.
+<p>Our focus is to provide timely interest free financing in an easy manner i.e. clustering, monitoring farmers field in person aiming to decrease cost, improve yield and manage disasters. Catering the issue of the right price by buying back farmers produce and then selling it to multinationals We, not only supply easy credit but also the correct product for their farming needs currently catering to 15000 farmers. 
 							</p>					</div>
 						
 				</div>
@@ -319,15 +373,10 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						Jazz Musafir
 					</a>
 				</h2>
-<p>A platform providing customers travel
-	information, tips and guidelines to make their
-	trip more comfortable and hassle free. From
-	hotel bookings, flight information, things to do,
-	and renting a car, all at your fingertips.
+<p>A platform providing customers travel information, tips and guidelines to make their trip more comfortable and hassle-free. From hotel bookings, flight information, things to do, and renting a car, all at your fingertips. Helping travellers gather information, make price comparisons regarding lodgings, restaurants and transportations. A digital travel guide, for all your travel needs. 
 							</p>					</div>
 						
 				</div>
-			
 				<!--GAMING-->
 				<div class="col-md-4 col-sm-6 gallery-grid gal_d ">
 					<div class="gaming-inner-box">
@@ -339,38 +388,37 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						
 							
 						</div>
-						<a href="https://www.gameland.com.pk/" target="_blank">
+					<a href="https://www.gameland.com.pk/" target="_blank">
 						Game Land
 					</a>
 				</h2>
-<p>Gameland is the is the user-friendly alternative App Store for Android Smartphones. 
+<p>
+    
+    Gameland is the is the user-friendly alternative App Store for Android Smartphones. 
 	It allows users to access more than 400+ premium Android games without ads and in-app purchases.
 	Gameland is the best choice for consumers who prefer full version apps including all 
 	premium features and without any advertisements or in-app purchases. It also provides a wide range
 	of games for Kids with Parental Control.
+
 							</p>					</div>
 						
 				</div>
-				<div class="col-md-4 col-sm-6 gallery-grid gal_d ">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c ">
 					<div class="gaming-inner-box">
 						<h2>
 						<div class="prod-icon">
-							<a href="https://gamestore.pk/" target="_blank">
+							<a href="https://gamestore.pk/">
 							<img src="images/products/gaming/gamestore.png" class="img-fluid" alt="Image">
 							</a>
 						
 							
 						</div>
-					 <a> 
+					 	<a href="https://gamestore.pk/" target="_blank"> 
 						Game Store
 					</a>
 				</h2>
 <p>
-	Gaming Portal is an exceptional user-friendly app store for all android smartphone users. 
-	It is aimed to evolve users' online gaming experience by providing Best, 
-	ad-free games without putting a strain on their pocket. Gaming Store users 
-	can access more than 400 premium android games with no ads or in app purchases. 
-	It also offers multiple games for children's learning.
+	Gaming Portal is an exceptional user-friendly app store for all android smartphone users. It is aimed to evolve users' online gaming experience by providing best, ad-free games without putting a strain on their pocket. Gaming Store users can access more than 400 premium android games with no ads or in-app purchases. It also offers multiple games for children's learning. 
 	</p>			
 		</div>
 						
@@ -381,7 +429,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/collectcall.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/collect-call.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -398,7 +446,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/notify.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/notify.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -416,7 +464,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-								<img src="images/products/vas/sponsorme.png" class="img-fluid" alt="Image">
+								<img src="ICONS/Tab-Vas/sponsor-me.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -434,7 +482,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/missedsms.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/missed-sms.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -452,7 +500,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/sms.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/sms.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -470,7 +518,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/easycall.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/easy-call.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -488,7 +536,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/vip-call.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/vip-call.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -506,7 +554,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/parental-control-service.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/parental-control-service.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -524,7 +572,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/stocks.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/stocks.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -542,7 +590,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/ubudget.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/u-budget.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -550,7 +598,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					U Budget
 					</a>
 				</h2>
-<p>Allows you to manage your expenses effectively and helps you to boost your saving.
+<p>Allows you to manage all your expenses effectively and helps you to boost your saving.
 							</p>					</div>
 						
 				</div>
@@ -559,7 +607,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/Ulog.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/U-log.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -568,7 +616,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					</a>
 				</h2>
 <p>
-	Keeps your call logs and allow you to check your call logs at any time.
+Keeps your call logs and allow you to check your call logs at any time.
 							</p>					</div>
 						
 				</div>
@@ -578,7 +626,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/sharing.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/sharing.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -599,7 +647,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/secret.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/secret.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -617,7 +665,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/endcall.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/end-call.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -625,7 +673,8 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 							End of Call Notification
 					</a>
 				</h2>
-<p>Prepaid subscriber can receive a notification, informing them about the cost of the call along with the remaining balance.
+<p>Prepaid subscriber can receive a notification, 
+	informing them about the cost of the call along with the remaining balance.
 							</p>					</div>
 						
 				</div>
@@ -634,7 +683,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/beep.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/beep.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -643,7 +692,8 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					</a>
 				</h2>
 <p>
-	Easily send somebody a beep miss call when you are out of balance and need to contact somebody urgently.
+	Easily send somebody a beep miss call when you are out 
+	of balance and need to contact somebody urgently.
 							</p>					</div>
 						
 				</div>
@@ -653,7 +703,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/voiler.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/voiler.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -662,7 +712,8 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					</a>
 				</h2>
 <p>
-	An IVR based voice messaging and social networking service. Listen to voice feeds of friends, family, politicians or anyone and also record your own.
+	An IVR based voice messaging and social networking service. 
+	Listen to voice feeds of friends, family, politicians or anyone and also record your own.
 							</p>					</div>
 						
 				</div>
@@ -671,7 +722,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/radio.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/radio.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -689,7 +740,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/voice-morphing.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/voice-morphing.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -708,7 +759,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/balance-inquiry.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/balance-inquiry.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -717,7 +768,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					</a>
 				</h2>
 <p>
-	You can check your remaining balance by sending a SMS or dialing a short code.
+	Check how much balance you used and how much you still have remaining by sending a SMS or dialing a short code. 
 							</p>					</div>
 						
 				</div>
@@ -727,7 +778,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/incomming-call-screening.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/incomming-call-screening.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -745,7 +796,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/background-music.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/background-music.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -764,7 +815,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/auto-call-back.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/auto-call-back.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -783,7 +834,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/my-status.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/my-status.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -802,7 +853,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/vas/missed-call.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Vas/missed-call.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -823,7 +874,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/integrated-services/access.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Intgrated-Services/vas-icon-1.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -831,10 +882,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					Access Control System
 					</a>
 				</h2>
-<p>We provide Access Control System which includes door systems, biometric
-	systems, and card reader systems for homes, offices and other access control
-	applications. Our experts will deploy and install all the systems and provide
-	basic support to users
+<p>We provide access control systems, which include door, biometric and card reader systems for homes and offices. Also, deploy and install the systems and provide essential support. 
 							</p>					</div>
 						
 				</div>	
@@ -844,15 +892,12 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 				
-							<img src="images/products/integrated-services/data2.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Intgrated-Services/vas-icon-2.png" class="img-fluid" alt="Image">
 		
 						</div>
 							Data Center Solutions
 				</h2>
-<p>In support of the use of increasingly complex applications such as grid
-	computing, content delivery, e-commerce and data backup, the need for scalable
-	infrastructures, power and cooling, and higher bandwidth continue to grow -
-	intensifying the demand for better connectivity solutions in the data center. We provide solutions to address this issue.
+<p>We offer data centers supporting the use of increasingly complex applications such as grid computing, content delivery networks, e-commerce solutions and data backup services. 
 							</p>					</div>
 						
 				</div>
@@ -863,7 +908,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/integrated-services/fireproof.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Intgrated-Services/vas-icon-3.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -871,11 +916,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					Fire Security System
 					</a>
 				</h2>
-<p>We as an organisation are team of experienced engineers and technicians who
-	had worked and are working on supply, installation, rectification and support
-	on any type of fire alarm system. We are working with all the major brands in
-	fire alarm systems. Our expert team guides the customer about the best use of
-	fire alarm system for human life safety.
+<p>Our expert team works on supply, installation, rectification and support on all types of fire alarm systems to our customers. Giving guidance regarding best use of security systems
 							</p>					</div>
 						
 				</div>
@@ -885,7 +926,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/integrated-services/wireless-network.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Intgrated-Services/vas-icon-4.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -893,11 +934,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					Wireless Network
 					</a>
 				</h2>
-<p>We offer Network planning, implementation and support services with the
-	vision to provide secure high-speed network access to enterprise computer
-	users, offering such essential technology features as e-mail, messaging, voice
-	and video communications, wireless network access, network-attached storage
-	and Internet access.
+<p>We offer network planning, implementation and support services with the vision to provide secure high-speed network access to enterprise computer users.Offering technology features such as e-mail, messaging, VoIP services, storage and internet access. 
 							</p>					</div>
 						
 				</div>
@@ -907,7 +944,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/integrated-services/firewall.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Intgrated-Services/vas-icon-5.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -915,11 +952,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					Statefull Firewall Solution
 					</a>
 				</h2>
-<p>Safeguarding the business information by means of procedures, processes and
-	usage of high end technology is increasing day by day. Hardening the
-	authentication process by implementing 2 Factor authentications, managing
-	compliance by use of deep packet inspection and threat monitoring solutions,
-	can help your business achieve high degree of security.
+<p>We offer consultancy for developing and implementing security solutions such as hardening the authentication process by implementing 2-factor authentications, managing compliance through deep packet inspection and threat monitoring solutions. 
 							</p>					</div>
 						
 				</div>
@@ -929,7 +962,7 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						<h2>
 						<div class="prod-icon">
 							<a>
-							<img src="images/products/integrated-services/surveillance.png" class="img-fluid" alt="Image">
+							<img src="ICONS/Tab-Intgrated-Services/vas-icon-6.png" class="img-fluid" alt="Image">
 						</a>
 							
 						</div>
@@ -937,10 +970,8 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 					Security Surveillance
 					</a>
 				</h2>
-<p>To have reliable video surveillance systems is very crucial requirement of
-	companies these days.The Switch Video Surveillance Solution provides video
-	networks with the modern capabilities with regards to security and safety
-	needs of the organisations. Our solution ensures improved efficiency.  </p>					</div>
+<p>Providing video networks with modern capabilities concerning security and safety needs, ensuring improved efficiency by identifying and retrieving video, checking image quality, and detecting and reporting image faults.  
+Our solution ensures improved efficiency.</p>					</div>
 						
 				</div>
 				</div>
@@ -952,12 +983,84 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 		</div>
 	</div>
 	
+	
+	
+		<!-- <div class="container">
+			<div class="section-title text-center">
+                <h3>Blog</h3>
+                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
+            </div>
+			
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/blog-01.jpg" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span>06</span>
+								<span>Aug</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
+							<ul>
+                                <li>by admin</li>
+                                <li>Apr 21, 2018</li>
+                                <li><a href="#"><b> Comments</b></a></li>
+                            </ul>
+							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/blog-02.jpg" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span>06</span>
+								<span>Aug</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
+							<ul>
+                                <li>by admin</li>
+                                <li>Apr 21, 2018</li>
+                                <li><a href="#"><b> Comments</b></a></li>
+                            </ul>
+							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span>06</span>
+								<span>Aug</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
+							<ul>
+                                <li>by admin</li>
+                                <li>Apr 21, 2018</li>
+                                <li><a href="#"><b> Comments</b></a></li>
+                            </ul>
+							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div> -->
 	</div>
 	
 	<div id="team" class="section wb">
 		<div class="container">
 			<div class="section-title text-center">
-				<h3>Our Team</h3>
+				<h3>Meet Our Team</h3>
 				<!-- <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p> -->
 			</div><!-- end title -->
 		
@@ -969,11 +1072,11 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						</div>
 						<div class="team-content">
 							<h3 class="title">Khizer Alam Khan</h3>
-							<span class="post">Director Operation</span>
+							<span class="post">Director Operations</span>
 							<ul class="social">
-								<li><a href="mailto:mailto:khizer.khan@switchsolutions.com.pk" class="fa fa-envelope"></a></li>
+								<li><a href="mailto:khizer.khan@switchsolutions.com.pk" class="fa fa-envelope"></a></li>
 								<li><a href="https://www.linkedin.com/in/khizer-alam-khan-9464b539/" target="_blank" class="fa fa-linkedin"></a></li>
-								<li><a href="skype:khizer.alam.khan" class="fa fa-skype"></a></li>
+								<li><a href="skype:khizer.alam.khan?chat" class="fa fa-skype"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -988,9 +1091,9 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 							<h3 class="title">Tabbish Mahood</h3>
 							<span class="post">Head of Platforms</span>
 							<ul class="social">
-								<li><a href="mailto:mailto:tabbish.mahmood@switchsolutions.com.pk" class="fa fa-envelope"></a></li>
+								<li><a href="mailto:tabbish.mahmood@switchsolutions.com.pk" class="fa fa-envelope"></a></li>
 								<li><a href="https://www.linkedin.com/in/tabbishmahmood/" target="_blank" class="fa fa-linkedin"></a></li>
-								<li><a href="skype:tabbish.mahmood" class="fa fa-skype"></a></li>
+								<li><a href="skype:tabbish.mahmood?chat" class="fa fa-skype"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -1003,11 +1106,11 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						</div>
 						<div class="team-content">
 							<h3 class="title">Ahmad Bilal</h3>
-							<span class="post">Manager Digital</span>
+							<span class="post">Manager Digital Products</span>
 							<ul class="social">
-								<li><a href="mailto:mailto:Ahmad.bilal@switchsolutions.com.pk" class="fa fa-envelope"></a></li>
+								<li><a href="mailto:Ahmad.bilal@switchsolutions.com.pk" class="fa fa-envelope"></a></li>
 								<li><a href="https://www.linkedin.com/in/ahmad-bilal-2b53b635/" target="_blank" class="fa fa-linkedin"></a></li>
-								<li><a href="skype:ahmad.bilall1" class="fa fa-skype"></a></li>
+								<li><a href="skype:Ahmad.Bilal?chat" class="fa fa-skype"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -1017,20 +1120,75 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 			</div>
 		</div>
 	</div>
-	
+<div id="contact" style="padding-top: 100px; padding-bottom: 100px;">
+	<div class="row">
+		<div class="col-md-5">
+	<img style="width:100%; height:600px; border-radius: 0px 20px 20px 0px;"src="images/theme/about_04.jpg">
+		</div>
+	<div class="col-md-7">
+		<div style="padding-top: 25%; ">
+			<div class="section-title">
+		<h3 >Contact Us</h3>
+			</div>
+			<ul class="contact-list">
+				<li>
+					<li style="color: #28a9e2 !important; margin-right: 5px;" class="fa fa-phone" >
+					
+					</li>
+					<span style="margin-left: 18px;" >
+					+92 345345435
+				</span>
+				</li>
+				<li>
+			
+					<li style="color: #28a9e2 !important;" class="fa fa-facebook">
+						<a class="Contact-links" href="https://www.facebook.com/SwitchSolutionsLTD">
+						www.facebook.com/SwitchSolutionsLTD
+						
+					</a>
+					</li>
+					
+					
+		
+					</li>
+					
+				<li>
+					
+					<li style="color: #28a9e2 !important; " class="fa fa-envelope">
+						<a class="Contact-links" href="mailto:info@switchsolutions.com.pk">
+							info@switchsolutions.com.pk
+						</a>
+					</li>
+					</li>
+				<li>
+					<li style="color: #28a9e2 !important; " class="fa fa-linkedin">
+						<a href="https://www.linkedin.com/company/switch-solutions-pvt-ltd/" class="Contact-links" >
+						
+							www.linkedin.com/company/switch-solutions-pvt-ltd
+							
+						</a>
+					</li>
+				
+				</li>
+				</ul>
+	</div>
+	</div>
+	</div>
+</div>	
 
-<div id="contact" class="section db">
+<!-- OLD CONTACT US 
+	<div id="contact" class="section db">
 	<div class="container">
 		<div class="section-title text-center">
-			<h3>Contact</h3>
-			<p>Get in touch with us.</p>
-		</div><!-- end title -->
+			<h3>Contact Us</h3>
+		
+		</div>
 
 		<div class="row">
 			<div class="col-md-12">
 				<div class="contact_form">
 					<div id="message"></div>
-					<form method="POST" action="mail/contact_me.php" id="contactForm" name="sentMessage" novalidate="novalidate">
+				<form method="POST" action="mail/contact_me.php" id="contactForm" name="sentMessage" novalidate="novalidate">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
@@ -1060,37 +1218,83 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 						</div>
 					</form>
 				</div>
-			</div><!-- end col -->
-		</div><!-- end row -->
-	</div><!-- end container -->
-</div><!-- end section -->
-
-<div class="copyrights">
+			</div>
+		</div>
+	</div>
+</div> -->
+<!-- 
+<div class="copyrights"> -->
 	
-	<div class="container">
-		
+	
+		<div class="row" style="background-color:#151515;">
+			<div class="col-sm-4" style="text-align: center; height: fit-content; padding-bottom: 40px;">
+	<a href="#">
+			<img style="max-height: 40%; max-width: 60%; padding-top: 40px;" class="img-fluid" src="images/switch-solutions-logo-grey.png" alt="" />
+		</a>
+		</div>
+		<div class="col-sm-4" >
+			<div class="footer-center" style="text-align: justify; margin-left: 10%; padding-top: 30px;">
+					 <h2 style="color:white"> COMPANY</h2>
+					 <ul>
+						<li >
+				<a  class="js-scroll-trigger link-hover" href="#home">Home</a>
+					</li>
+					<li>
+				   <a   class="js-scroll-trigger link-hover" href="#Products">
+					Products</a>
+				  </li>
+
+				  <li>
+					<a  class="js-scroll-trigger link-hover" href="#team">
+						Team</a>
+				</li>
+				
+				<li>
+					<a   class="js-scroll-trigger link-hover" href="#contact">
+						Contact</a>
+				</li>
+					</ul>
+
+			</div>
+	
+	</div>
+
+	<div class="col-sm-4">
 		<div class="footer-distributed">
-			<a href="#"><img class="img-fluid" src="images/switch-solutions-logo-grey.png" alt="" /></a>
-			<div class="footer-center">
-				<p class="footer-links">
-					<a href="#home">Home</a>
-					<!-- <a href="#">Blog</a> -->
-				   <a href="#Products">Products</a>
-					<a href="#about">About</a>
-					<!-- <a href="#">Faq</a> -->
-					<a href="#contact">Contact</a>
-				</p>
-				<p class="footer-company-name"> &copy; All Rights Reserved. 2020 
-					<br></p>
+			
+			<div class="footer-center" style="text-align: justify; margin-left: 10%; padding-top: 30px;">
+				<!-- <p class="footer-links">
+					 -->
+					 <h2 style="color:white"> Services</h2>
+					<ul>
+						<li class="" >
+				<a class="js-scroll-trigger link-hover " href="#home">VAS Solutions</a>
+					</li>
+					<li style="margin-top: -5%;">
+				   <a   class="js-scroll-trigger link-hover" href="#Products">Integrated Services</a>
+				  </li>
+				  <li style="margin-top: -5%;">
+					<a  class="js-scroll-trigger link-hover" href="#services">Digital Platforms</a>
+				</li>
+				<li style="margin-top: -5%;">
+					<a  class="js-scroll-trigger link-hover" href="#services">Gaming</a>
+				</li>
+					</ul>
+				
+				<!-- </p> -->
+		
+					<br>
 
 			</div>
 		</div>
-	</div><!-- end container -->
+	</div>
+	
+	</div>
 </div><!-- end copyrights -->
 
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-    <!-- ALL JS FILES -->
+     <!-- ALL JS FILES -->
     <script src="js/all.js"></script>
 	<!-- Camera Slider -->
 	<!-- <script src="js/jquery.mobile.customized.min.js"></script> -->
@@ -1122,17 +1326,17 @@ We not only operate online but also have a shop in G-9 Markaz, Islamabad, so you
 	
 		<script>
 				function PreFunction() {
-				document.getElementById("Int").click();
+				document.getElementById("VAS").click();
 			 }
 		window.onload = PreFunction;
 		
 			$(function () { 
 				$(window).scroll(function () {
 					if ($(this).scrollTop() > 100) { 
-						$('.navbar-brand img').attr('src','images/switch-solutions-logo.png');
+						$('.navbar-brand img').attr('src','images/switch-black.png');
 					}
 					if ($(this).scrollTop() <= 100) { 
-						$('.navbar-brand img').attr('src','images/switch-solutions-logo-white.png');
+						$('.navbar-brand img').attr('src','images/switch-white.png');
 					}
 				})
 			});
